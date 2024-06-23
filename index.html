@@ -2,17 +2,23 @@
 <html>
   <title>Find your Marriage date</title>
   <style>
-    margin: 0 auto;
+    body{
+      margin: 0 auto;
+    }
+    .mainBody{
+      width: 70%;
+    }
   </style>
 <body>
 
 <h1 style="text-align: center;">Simple AI system to know your marriage date!</h1>
+<div class="mainBody">
 <p>Your age? &nbsp;<input id="age" placeholder="Enter your age"></input></p>
 <p>Male or Female? &nbsp;<input id="gender" placeholder="Male or Female"></input></p>
 <p>First letter of your Name (eg. A)?&nbsp; <input id="name" placeholder="Enter your First letter of name" onkeyup=bangFunc()></input></p>
 <p id="bang"></p>
-
 <button id="result">Get the Result</button>
+</div>
 </body>
   <script>
     //var is used to declare variables as global. Bad practice! 
