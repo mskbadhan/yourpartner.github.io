@@ -78,7 +78,7 @@ input[type=submit]:hover {
       <label for="age">Your age</label>
     </div>
     <div class="col-75">
-      <input type="text" id="age" name="age" placeholder="Your age in number">
+      <input type="text" id="age" name="age" placeholder="Your age in number" required>
     </div>
   </div>
   <div class="row">
@@ -86,7 +86,7 @@ input[type=submit]:hover {
       <label for="gender">Gender</label>
     </div>
     <div class="col-75">
-      <input type="text" id="gender" name="gender" placeholder="Your Gender..">
+      <input type="text" id="gender" name="gender" placeholder="Your Gender.." required>
     </div>
   </div>
   <div class="row">
@@ -94,7 +94,7 @@ input[type=submit]:hover {
       <label>First two letter of name</label>
     </div>
     <div class="col-75">
-      <input type="text" id="name" name="name" onkeyup=bangFunc() placeholder="Just first two letters of name" maxlength=2>
+      <input type="text" id="name" name="name" onkeyup=bangFunc() placeholder="Just first two letters of name" maxlength=2 required>
     </div>
   </div>
   <p id="bang" style="color: Red; font-size: 20px; "></p>
@@ -119,7 +119,7 @@ input[type=submit]:hover {
     function bangFunc (){
       let bang = document.querySelector("#bang");
       let nameTyp = document.querySelector("#name").value;
-      bang.innerHTML = `AI thiks your name is long and have twop or three parts having T/N/A/J & ${nameTyp}. Seems like you are Bangladeshi. Now get the result.`;
+      bang.innerHTML = `AI thiks your name is long and have 2 or 3 parts with T/N/A/J & ${nameTyp} in it. And seems like you are Bangladeshi. Now get the result.`;
     }
   </script>
 </html>
