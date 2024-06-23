@@ -83,7 +83,11 @@ input[type=submit]:hover {
           <label for="gender">Gender</label>
         </div>
         <div class="col-75">
-          <input type="text" id="gender" name="gender" placeholder="Your Gender.." required>
+          <select id="gender">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+<!--           <input type="text" id="gender" name="gender" placeholder="Your Gender.." required> -->
         </div>
       </div>
       <div class="row">
@@ -113,6 +117,7 @@ input[type=submit]:hover {
     var gender = document.querySelector("#gender");
     //var name = document.querySelector("#name");
     var result = document.querySelector("#result");
+    console.log(gender);
 
     function bangFunc (){
       let bang = document.querySelector("#bang");
