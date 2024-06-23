@@ -68,37 +68,38 @@ input[type=submit]:hover {
   </style>
 <body>
 <h1 style="text-align: center;">Simple AI system to know your marriage date!</h1>
-</div>
   <div class="container">
-  <div class="row">
-    <div class="col-25">
-      <label for="age">Your age</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="age" name="age" placeholder="Your age in number" required>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="gender">Gender</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="gender" name="gender" placeholder="Your Gender.." required>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label>First two letter of name</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="name" name="name" onkeyup=bangFunc() placeholder="Just first two letters of name" maxlength=2 required>
-    </div>
-  </div>
-  <p id="bang" style="color: Red; font-size: 20px; "></p>
-  <br>
-  <div class="row">
-    <input type="submit" value="Get result" id="result">
-  </div>
+    <form>
+      <div class="row">
+        <div class="col-25">
+          <label for="age">Your age</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="age" name="age" placeholder="Your age in number" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="gender">Gender</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="gender" name="gender" placeholder="Your Gender.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label>First two letter of name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="name" name="name" onkeyup=bangFunc() placeholder="Just first two letters of name" maxlength=2 required>
+        </div>
+      </div>
+      <p id="bang" style="color: Red; font-size: 20px; "></p>
+      <br>
+      <div class="row">
+        <input type="submit" value="Get result" id="result">
+      </div>
+    </form>
 </div>
 
 
