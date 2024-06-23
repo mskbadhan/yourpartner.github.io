@@ -84,43 +84,32 @@ input[type=submit]:hover {
   <div class="container">
   <div class="row">
     <div class="col-25">
-      <label for="fname">First Name</label>
+      <label for="age">Your age</label>
     </div>
     <div class="col-75">
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <input type="text" id="age" name="age" placeholder="Your age in number">
     </div>
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="lname">Last Name</label>
+      <label for="gender">Gender</label>
     </div>
     <div class="col-75">
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <input type="text" id="gender" name="gender" placeholder="Your Gender..">
     </div>
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="country">Country</label>
+      <label for="name">First two letter of name</label>
     </div>
     <div class="col-75">
-      <select id="country" name="country">
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
-      </select>
+      <input type="text" id="name" name="name" placeholder="Just first two letters of name">
     </div>
   </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="subject">Subject</label>
-    </div>
-    <div class="col-75">
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-    </div>
-  </div>
+  <p id="bang" style="color: Red; font-size: 20px; "></p>
   <br>
   <div class="row">
-    <input type="submit" value="Submit">
+    <input type="result" value="Get result" id="result">
   </div>
 </div>
 
@@ -138,7 +127,7 @@ input[type=submit]:hover {
     var result = document.querySelector("#result");
 
     function bangFunc (){
-      bang.innerHTML = "Seems like you are Bangladeshi.";
+      bang.innerHTML = `AI thiks your name is long and have twop or three parts having T/N/A/J & ${name.value}. Seems like you are Bangladeshi. Now get the result.`;
     }
   </script>
 </html>
