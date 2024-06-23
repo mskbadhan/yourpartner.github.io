@@ -118,7 +118,8 @@ input[type=submit]:hover {
     var result = document.querySelector("#result");
 
     function bangFunc (){
-      bang.innerHTML = `AI thiks your name is long and have twop or three parts having T/N/A/J & ${name.value}. Seems like you are Bangladeshi. Now get the result.`;
+      let nameTyped = name.value;
+      bang.innerHTML = `AI thiks your name is long and have twop or three parts having T/N/A/J & ${nameTyped}. Seems like you are Bangladeshi. Now get the result.`;
     }
   </script>
 </html>
