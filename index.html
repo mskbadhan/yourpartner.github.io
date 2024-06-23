@@ -9,6 +9,36 @@
       width: 70%;
       margin: 0 auto;
     }
+    input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
   </style>
 <body>
 
@@ -18,7 +48,7 @@
 <p><tr>Your age? &nbsp;</tr><tr><input id="age" placeholder="Enter your age"></input></tr></p>
 <p>Male or Female? &nbsp;<input id="gender" placeholder="Male or Female"></input></p>
 <p>First letter of your Name (eg. A)?&nbsp; <input id="name" placeholder="Enter your First letter of name" onkeyup=bangFunc()></input></p>
-<p id="bang"></p>
+<p id="bang" style="color: Red; font-size: 20px; "></p>
 <button id="result">Get the Result</button>
 </table>
 </div>
