@@ -77,6 +77,7 @@ input[type=submit]:hover {
         </div>
         <div class="col-75">
           <input type="text" id="age" name="age" placeholder="Your age in number" required>
+          <span id="ageInfo" onkeyup=ageInfo()></span>
         </div>
       </div>
       <div class="row">
@@ -88,7 +89,6 @@ input[type=submit]:hover {
             <option value="Male">Male</option>
             <option value="Female">Female</option>
           </select>
-<!--           <input type="text" id="gender" name="gender" placeholder="Your Gender.." required> -->
         </div>
       </div>
       <div class="row">
@@ -114,12 +114,15 @@ input[type=submit]:hover {
 </body>
   <script>
     //var is used to declare variables as global. Bad practice! 
-    var age = document.querySelector("#age");
+    ageInfo = () => {
+      let age = document.querySelector("#age");
+      ageInfo = document.querySelector("#ageInfo");
+      ageInfo.innerHTML = `${age}Such a tender age!`;
+
+    }
     var gender = document.querySelector("#gender");
     //var name = document.querySelector("#name");
     var result = document.querySelector("#result");
-    console.log(gender.value);
-
     function bangFunc (){
       let bang = document.querySelector("#bang");
       let nameTyp = document.querySelector("#name").value.toUpperCase();
